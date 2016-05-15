@@ -9,5 +9,8 @@
 - How to use
 
 ```
-DZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, DisappearAfter: <Disappear After x.x seconds>, Callback: <Callback Function>)
+DZPopupMessageView.showPopupMessage(<Message String>, 
+                                    inView: <In View>, 
+                                    DisappearAfter: <Disappear After x.x seconds>, 
+                                    Callback: <Callback Function>)
 ```
