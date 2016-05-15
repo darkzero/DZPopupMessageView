@@ -13,6 +13,7 @@ public class DZPopupMessageView: UIView {
     var parentView: UIView?;
     var messageLabel: UILabel = UILabel(frame: CGRectMake(10, 5, 220, 22));
     var callback:()->Void = {() -> Void in};
+    var disappearDelay: NSTimeInterval = 1.0;
     
     private var _message = "";
     var message:String {
@@ -34,24 +35,26 @@ public class DZPopupMessageView: UIView {
                                                               options: NSStringDrawingOptions.UsesLineFragmentOrigin,
                                                               attributes: [NSFontAttributeName : UIFont.systemFontOfSize(12.0)],
                                                               context: nil);
-        let labelRect   = CGRectMake(10, 5, rect.width, rect.height);
-        let viewRect    = CGRectMake(0, 0, rect.width+20, rect.height+10);
+        let labelRect   = CGRectMake(10, 5, 220, rect.height);
+        let viewRect    = CGRectMake(0, 0, 240, rect.height+10);
         self.messageLabel.frame = labelRect;
         self.messageLabel.textAlignment = NSTextAlignment.Center;
         self.messageLabel.font = UIFont.systemFontOfSize(12.0);
         self.messageLabel.textColor = UIColor.whiteColor();
+        self.messageLabel.numberOfLines = 0;
         self.messageLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping;
         super.init(frame: viewRect);
         self.message = message;
-        self.backgroundColor = UIColor(white: 0.4, alpha: 0.7);
+        self.backgroundColor = UIColor(white: 0.2, alpha: 0.7);
         self.layer.cornerRadius = 8.0;
         self.addSubview(self.messageLabel);
     }
     
-    public class func showPopupMessage(message: String, inView view: UIView, DisappearAfter disappear:CGFloat, Callback callback:()->Void) {
+    public class func showPopupMessage(message: String, inView view: UIView, DisappearAfter disappearDelay:NSTimeInterval, Callback callback:()->Void) {
         let msgView = DZPopupMessageView(message: message);
         msgView.parentView = view;
         msgView.callback = callback;
+        msgView.disappearDelay = disappearDelay;
         
         DZPopupMessageQueueManager.sharedInstance.addPopupMessage(msgView);
     }
@@ -77,7 +80,7 @@ public class DZPopupMessageView: UIView {
     
     func hideWithAnimation(animation: Bool) {
         //
-        UIView.animateWithDuration(0.5, delay: 1.0, options: UIViewAnimationOptions.CurveLinear, animations: { 
+        UIView.animateWithDuration(0.5, delay: self.disappearDelay, options: UIViewAnimationOptions.CurveLinear, animations: {
             self.alpha = 0.5;
             self.center = CGPointMake(UIScreen.mainScreen().bounds.width/2, UIScreen.mainScreen().bounds.height/4);
         }) { (finished) in

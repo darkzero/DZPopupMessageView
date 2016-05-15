@@ -11,13 +11,8 @@ import UIKit
 public class DZPopupMessageQueue: NSObject {
     
     //MARK: - properties
-    public var messageList: Array<DZPopupMessageView> = Array<DZPopupMessageView>();
+    public dynamic var messageList: Array<DZPopupMessageView> = Array<DZPopupMessageView>();
     var messageCount: Int = 0;
-    
-    lazy var count: Int = {
-        let c = self.messageList.count;
-        return c;
-    }();
     
     //MARK: - class functions
     /// Singleton
@@ -42,5 +37,10 @@ public class DZPopupMessageQueue: NSObject {
     
     func addMessage(message: DZPopupMessageView) {
         self.insertObject(message, inMessageListAtIndex: 0);
+    }
+    
+    func count() -> Int {
+        let c = DZPopupMessageQueue.sharedInstance.messageList.count;
+        return c;
     }
 }

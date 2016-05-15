@@ -31,7 +31,7 @@ public class DZPopupMessageQueueManager: NSObject {
     
     override init() {
         super.init();
-        self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions.New, context: nil);
+        self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.Old,.New]), context: nil);
     }
     
     public func addPopupMessage(message: DZPopupMessageView) {
@@ -48,7 +48,7 @@ public class DZPopupMessageQueueManager: NSObject {
     }
     
     public func next() {
-        if ( self.messageQueuse.count > 0  ) {
+        if ( self.messageQueuse.count() > 0  ) {
             self.isRunning = true;
             let msgPopup = (self.messageQueuse.messageList.last)! as DZPopupMessageView;
             msgPopup.showWithAnimation(true);
