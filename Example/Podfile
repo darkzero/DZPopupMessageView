@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DZPopupMessageView_Tests' do
+  pod 'DZPopupMessageView', :path => '../'
+  
+  
+end
