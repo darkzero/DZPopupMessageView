@@ -14,6 +14,8 @@
 		A89A86F4E5ADDC5A60EAB1B619527C0A /* Pods-DZPopupMessageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AA74921670878F5119DDDF38A2672 /* Pods-DZPopupMessageView_Tests-dummy.m */; };
 		EAEF4B30E0BC148175DC4FA5ABC36F90 /* Pods-DZPopupMessageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0465221807E12866C6DEBA3FAAE961D5 /* Pods-DZPopupMessageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF8844771CE8B9EF00A02864 /* DZPopupMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8844761CE8B9EF00A02864 /* DZPopupMessageView.swift */; };
+		EF88447A1CE8BF6B00A02864 /* DZPopupMessageQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8844791CE8BF6B00A02864 /* DZPopupMessageQueue.swift */; };
+		EF88447C1CE8BF7700A02864 /* DZPopupMessageQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF88447B1CE8BF7700A02864 /* DZPopupMessageQueueManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		E0366C83A6B159D577554ACD5D9596EF /* DZPopupMessageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZPopupMessageView.xcconfig; sourceTree = "<group>"; };
 		E0967F12E2DAC69DE81595B3AFA70BE6 /* DZPopupMessageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-prefix.pch"; sourceTree = "<group>"; };
 		EF8844761CE8B9EF00A02864 /* DZPopupMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZPopupMessageView.swift; sourceTree = "<group>"; };
+		EF8844791CE8BF6B00A02864 /* DZPopupMessageQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZPopupMessageQueue.swift; sourceTree = "<group>"; };
+		EF88447B1CE8BF7700A02864 /* DZPopupMessageQueueManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZPopupMessageQueueManager.swift; sourceTree = "<group>"; };
 		F38A6F48F4D30CA65F60F467786F0236 /* Pods-DZPopupMessageView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZPopupMessageView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F704460B3B3BB3606FA7C1D094AFEADE /* DZPopupMessageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				EF8844761CE8B9EF00A02864 /* DZPopupMessageView.swift */,
+				EF8844791CE8BF6B00A02864 /* DZPopupMessageQueue.swift */,
+				EF88447B1CE8BF7700A02864 /* DZPopupMessageQueueManager.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF88447C1CE8BF7700A02864 /* DZPopupMessageQueueManager.swift in Sources */,
 				EF8844771CE8B9EF00A02864 /* DZPopupMessageView.swift in Sources */,
 				9487944B5D83556DEB486CD3288B4331 /* DZPopupMessageView-dummy.m in Sources */,
+				EF88447A1CE8BF6B00A02864 /* DZPopupMessageQueue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
