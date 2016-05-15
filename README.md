@@ -1,5 +1,4 @@
 # DZPopupMessageView
-simple message display queue
 
 [![Version](https://img.shields.io/cocoapods/v/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
 [![License](https://img.shields.io/cocoapods/l/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
