@@ -10,10 +10,10 @@
 		010D10699B2F869BF483BA57B544907F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		51D9EA7753C1D3E15812F3DBAC19C471 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		60092FF1BF89BE40CD9BEF59D45D0087 /* DZPopupMessageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F704460B3B3BB3606FA7C1D094AFEADE /* DZPopupMessageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		874EDFB4F68BE29BFE769B4D94EBFE13 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2341F5F3841C9B73A8B616046F3CBA4D /* ReplaceMe.swift */; };
 		9487944B5D83556DEB486CD3288B4331 /* DZPopupMessageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52AF3270D2FFB6385A0BED27059605 /* DZPopupMessageView-dummy.m */; };
 		A89A86F4E5ADDC5A60EAB1B619527C0A /* Pods-DZPopupMessageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9AA74921670878F5119DDDF38A2672 /* Pods-DZPopupMessageView_Tests-dummy.m */; };
 		EAEF4B30E0BC148175DC4FA5ABC36F90 /* Pods-DZPopupMessageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0465221807E12866C6DEBA3FAAE961D5 /* Pods-DZPopupMessageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF8844771CE8B9EF00A02864 /* DZPopupMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8844761CE8B9EF00A02864 /* DZPopupMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +30,6 @@
 		0465221807E12866C6DEBA3FAAE961D5 /* Pods-DZPopupMessageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZPopupMessageView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0D9AA74921670878F5119DDDF38A2672 /* Pods-DZPopupMessageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZPopupMessageView_Tests-dummy.m"; sourceTree = "<group>"; };
 		12BCC91F9F9C21B93F068E004C057CE7 /* Pods-DZPopupMessageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DZPopupMessageView_Tests.modulemap"; sourceTree = "<group>"; };
-		2341F5F3841C9B73A8B616046F3CBA4D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		23D94A8438EE2D9EF8C996DDEC6B28EA /* DZPopupMessageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZPopupMessageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32CC43F20369A878A2E45826C7EDBD67 /* Pods-DZPopupMessageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZPopupMessageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4B00A112C0361062E12A3DF303A29D52 /* Pods-DZPopupMessageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZPopupMessageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		D65F05A23E07372B61431B64CB6E8196 /* Pods_DZPopupMessageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZPopupMessageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0366C83A6B159D577554ACD5D9596EF /* DZPopupMessageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZPopupMessageView.xcconfig; sourceTree = "<group>"; };
 		E0967F12E2DAC69DE81595B3AFA70BE6 /* DZPopupMessageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-prefix.pch"; sourceTree = "<group>"; };
+		EF8844761CE8B9EF00A02864 /* DZPopupMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DZPopupMessageView.swift; sourceTree = "<group>"; };
 		F38A6F48F4D30CA65F60F467786F0236 /* Pods-DZPopupMessageView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZPopupMessageView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		F704460B3B3BB3606FA7C1D094AFEADE /* DZPopupMessageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +73,7 @@
 		0D8AD67434ECF4019095FCA831CEFDDE /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				2341F5F3841C9B73A8B616046F3CBA4D /* ReplaceMe.swift */,
+				EF8844761CE8B9EF00A02864 /* DZPopupMessageView.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,8 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF8844771CE8B9EF00A02864 /* DZPopupMessageView.swift in Sources */,
 				9487944B5D83556DEB486CD3288B4331 /* DZPopupMessageView-dummy.m in Sources */,
-				874EDFB4F68BE29BFE769B4D94EBFE13 /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
