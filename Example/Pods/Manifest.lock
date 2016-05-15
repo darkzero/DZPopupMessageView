@@ -1,0 +1,16 @@
+PODS:
+  - DZPopupMessageView (0.1.0)
+
+DEPENDENCIES:
+  - DZPopupMessageView (from `../`)
+
+EXTERNAL SOURCES:
+  DZPopupMessageView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DZPopupMessageView: 26fda9e7c67d275638f51c57fbe41f16bc216331
+
+PODFILE CHECKSUM: 7b28c89ac1245c5be2098eb56c4c06b835ef9466
+
+COCOAPODS: 1.0.0

@@ -1,0 +1,6 @@
+framework module DZPopupMessageView {
+  umbrella header "DZPopupMessageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

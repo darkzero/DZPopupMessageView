@@ -1,0 +1,6 @@
+framework module Pods_DZPopupMessageView_Tests {
+  umbrella header "Pods-DZPopupMessageView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
