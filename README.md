@@ -1,5 +1,6 @@
 # DZPopupMessageView
 
+[![CI Status](http://img.shields.io/travis/darkzero/DZPopupMessageView.svg?style=flat)](https://travis-ci.org/darkzero/DZPopupMessageView)
 [![Version](https://img.shields.io/cocoapods/v/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
 [![License](https://img.shields.io/cocoapods/l/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
 [![Platform](https://img.shields.io/cocoapods/p/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
