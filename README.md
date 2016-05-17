@@ -8,9 +8,28 @@
 
 - How to use
 
-```
+```Swift
 DZPopupMessageView.showPopupMessage(<Message String>, 
                                     inView: <In View>, 
                                     DisappearAfter: <Disappear After x.x seconds>, 
                                     Callback: <Callback Function>)
 ```
+
+## Requirements
+
+## Installation
+
+DZFiveStarBar is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "DZPopupMessageView"
+```
+
+## Author
+
+darkzero, darkzero_mk2@hotmail.com
+
+## License
+
+DZFiveStarBar is available under the MIT license. See the LICENSE file for more info.
