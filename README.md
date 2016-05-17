@@ -16,10 +16,11 @@ DZPopupMessageView.showPopupMessage(<Message String>,
 ```
 
 ## Requirements
+Xcode
 
 ## Installation
 
-DZFiveStarBar is available through [CocoaPods](http://cocoapods.org). To install
+DZPopupMessageView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
