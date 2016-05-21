@@ -13,7 +13,7 @@
 DZPopupMessageView.showPopupMessage(<Message String>, 
                                     inView: <In View>, 
                                     DisappearAfter: <Disappear After x.x seconds>, 
-                                    Callback: <Callback Function>)
+                                    Callback: <Callback Function>);
 ```
 
 ## Requirements
@@ -34,4 +34,4 @@ darkzero, darkzero_mk2@hotmail.com
 
 ## License
 
-DZFiveStarBar is available under the MIT license. See the LICENSE file for more info.
+DZPopupMessageView is available under the MIT license. See the LICENSE file for more info.
