@@ -8,46 +8,38 @@
 
 import UIKit
 
-public class DZPopupMessageQueueManager: NSObject {
+open class DZPopupMessageQueueManager: NSObject {
     
     lazy var messageQueuse: DZPopupMessageQueue = {
-        let queue = DZPopupMessageQueue.sharedInstance;
+        let queue = DZPopupMessageQueue.shared;
         return queue;
     }();
+    
     var isRunning = false;
     
     //MARK: - class functions
     /// Singleton
-    class var sharedInstance : DZPopupMessageQueueManager {
-        struct Static {
-            static var onceToken : dispatch_once_t = 0
-            static var instance : DZPopupMessageQueueManager? = nil
-        }
-        dispatch_once(&Static.onceToken) {
-            Static.instance = DZPopupMessageQueueManager();
-        }
-        return Static.instance!
-    }
+    static let shared : DZPopupMessageQueueManager = {DZPopupMessageQueueManager()}();
     
     override init() {
         super.init();
-        self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.Old,.New]), context: nil);
+        self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.old,.new]), context: nil);
     }
     
-    public func addPopupMessage(message: DZPopupMessageView) {
-        dispatch_sync(dispatch_queue_create("add_popup_message", nil)) {
+    open func addPopupMessage(_ message: DZPopupMessageView) {
+        DispatchQueue(label: "add_popup_message", attributes: []).sync {
             self.messageQueuse.addMessage(message);
         }
     }
     
-    public func clearAllQueue() {
+    open func clearAllQueue() {
         if ( isRunning ) {
             isRunning = false;
             self.messageQueuse.messageList.removeAll();
         }
     }
     
-    public func next() {
+    open func next() {
         if ( self.messageQueuse.count() > 0  ) {
             self.isRunning = true;
             let msgPopup = (self.messageQueuse.messageList.last)! as DZPopupMessageView;
@@ -58,7 +50,7 @@ public class DZPopupMessageQueueManager: NSObject {
         }
     }
     
-    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if ( keyPath == "messageList" ) {
             if ( !self.isRunning ) {
                 self.next();
