@@ -11,7 +11,7 @@ import UIKit
 open class DZPopupMessageQueue: NSObject {
     
     //MARK: - properties
-    open dynamic var messageList: Array<DZPopupMessageView> = Array<DZPopupMessageView>();
+    @objc open dynamic var messageList: Array<DZPopupMessageView> = Array<DZPopupMessageView>();
     var messageCount: Int = 0;
     
     //MARK: - class functions
