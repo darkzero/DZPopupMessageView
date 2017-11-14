@@ -33,7 +33,7 @@ open class DZPopupMessageView: UIView {
     public init(message: String) {
         let rect = (message as NSString).boundingRect(with: CGSize(width: 220, height: 0),
                                                               options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                                              attributes: [NSFontAttributeName : UIFont.systemFont(ofSize: 12.0)],
+                                                              attributes: [NSAttributedStringKey.font : UIFont.systemFont(ofSize: 12.0)],
                                                               context: nil);
         let labelRect   = CGRect(x: 10, y: 5, width: 220, height: rect.height);
         let viewRect    = CGRect(x: 0, y: 0, width: 240, height: rect.height+10);
