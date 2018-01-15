@@ -11,9 +11,9 @@
 
 ```Swift
 DZPopupMessageView.showPopupMessage(<Message String>, 
-                                    inView: <In View> _nullable, default is UIApplocation.shared.keywindow,
-                                    disappearAfter: <Disappear After x.x seconds> _nullable, default is 1.5,
-                                    callback: <Callback Function> _nu_nullable);
+                                    inView: <In View>, /*_nullable, default is UIApplocation.shared.keywindow*/
+                                    disappearAfter: <Disappear After x.x seconds>, /*_nullable, default is 1.5*/
+                                    callback: <Callback Function> /*_nullable*/);
 ```
 
 Can be used like these
