@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DZPopupMessageView"
-  s.version          = "0.1.0"
+  s.version          = "0.2.0"
   s.summary          = "DZPopupMessageView."
 
 # This description is used to generate tags and improve search results.
@@ -26,21 +26,11 @@ DZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, Disappe
                        DESC
 
   s.homepage         = "https://github.com/darkzero/DZPopupMessageView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "darkzero" => "darkzero_mk2@hotmail.com" }
   s.source           = { :git => "https://github.com/darkzero/DZPopupMessageView.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'DZPopupMessageView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DZPopupMessageView' => ['DZPopupMessageView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

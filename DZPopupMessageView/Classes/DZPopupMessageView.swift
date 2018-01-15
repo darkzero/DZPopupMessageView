@@ -12,7 +12,7 @@ open class DZPopupMessageView: UIView {
     
     var parentView: UIView?;
     var messageLabel: UILabel = UILabel(frame: CGRect(x: 10, y: 5, width: 220, height: 22));
-    var callback:()->Void = {() -> Void in};
+    var callback:(()->Void)?;// = {() -> Void in};
     var disappearDelay: TimeInterval = 1.0;
     
     fileprivate var _message = "";
@@ -26,6 +26,7 @@ open class DZPopupMessageView: UIView {
         }
     };
     
+    // MARK: - init
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -50,9 +51,18 @@ open class DZPopupMessageView: UIView {
         self.addSubview(self.messageLabel);
     }
     
-    open class func showPopupMessage(_ message: String, inView view: UIView, DisappearAfter disappearDelay:TimeInterval, Callback callback:@escaping ()->Void) {
+    // MARK: - Open Function
+    open class func showPopupMessage(_ message: String,
+                                     inView view: UIView? = nil,
+                                     DisappearAfter disappearDelay:TimeInterval = 1.5,
+                                     Callback callback:(()->Void)? = nil) {
         let msgView = DZPopupMessageView(message: message);
-        msgView.parentView = view;
+        if ( view != nil ) {
+            msgView.parentView = view;
+        }
+        else {
+            msgView.parentView = UIApplication.shared.keyWindow;
+        }
         msgView.callback = callback;
         msgView.disappearDelay = disappearDelay;
         
@@ -63,6 +73,7 @@ open class DZPopupMessageView: UIView {
         DZPopupMessageQueueManager.shared.clearAllQueue();
     }
     
+    // MARK: - Animations
     func showWithAnimation(_ animation: Bool) {
         //
         self.parentView?.addSubview(self);
@@ -91,7 +102,9 @@ open class DZPopupMessageView: UIView {
                 self.center = CGPoint(x: UIScreen.main.bounds.width/2, y: 0);
             }, completion: { (finished) in
                 self.removeFromSuperview();
-                self.callback();
+                if self.callback != nil {
+                    self.callback!();
+                }
             })
         }
     }

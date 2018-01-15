@@ -14,10 +14,12 @@ open class DZPopupMessageQueue: NSObject {
     @objc open dynamic var messageList: Array<DZPopupMessageView> = Array<DZPopupMessageView>();
     var messageCount: Int = 0;
     
-    //MARK: - class functions
-    /// Singleton
+    // MARK: - Singleton
     static var shared : DZPopupMessageQueue = {DZPopupMessageQueue()}();
     
+    // MARK: - Insert & Remove Objects
+    
+    /// insert a message object into queue array
     func insertObject(_ object: DZPopupMessageView, inMessageListAtIndex index: Int) {
         self.messageList.insert(object, at: index);
     }

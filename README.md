@@ -11,10 +11,23 @@
 
 ```Swift
 DZPopupMessageView.showPopupMessage(<Message String>, 
-                                    inView: <In View>, 
-                                    DisappearAfter: <Disappear After x.x seconds>, 
-                                    Callback: <Callback Function>);
+                                    inView: <In View> _nullable, default is UIApplocation.shared.keywindow,
+                                    disappearAfter: <Disappear After x.x seconds> _nullable, default is 1.5,
+                                    callback: <Callback Function> _nu_nullable);
 ```
+
+Can be used like these
+
+```Swift
+DZPopupMessageView.showPopupMessage("Message body");
+DZPopupMessageView.showPopupMessage("Message body", inView: <Target View>);
+DZPopupMessageView.showPopupMessage("Message body", inView: <Target View>, disappearAfter: 1.0);
+DZPopupMessageView.showPopupMessage("Message body", inView: <Target View>, disappearAfter: 1.0) {
+    // Do something
+};
+...
+```
+
 
 ## Requirements
 Xcode

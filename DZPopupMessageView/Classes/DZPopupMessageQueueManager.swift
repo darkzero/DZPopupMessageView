@@ -9,7 +9,7 @@
 import UIKit
 
 open class DZPopupMessageQueueManager: NSObject {
-    
+    // MARK: - Properties
     lazy var messageQueuse: DZPopupMessageQueue = {
         let queue = DZPopupMessageQueue.shared;
         return queue;
@@ -17,15 +17,16 @@ open class DZPopupMessageQueueManager: NSObject {
     
     var isRunning = false;
     
-    //MARK: - class functions
-    /// Singleton
+    //MARK: - Singleton
     static let shared : DZPopupMessageQueueManager = {DZPopupMessageQueueManager()}();
     
+    // MARK: - init
     override init() {
         super.init();
         self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.old,.new]), context: nil);
     }
     
+    // MARK: - Open Functions
     open func addPopupMessage(_ message: DZPopupMessageView) {
         DispatchQueue(label: "add_popup_message", attributes: []).sync {
             self.messageQueuse.addMessage(message);
@@ -50,6 +51,7 @@ open class DZPopupMessageQueueManager: NSObject {
         }
     }
     
+    // MARK: - KVO
     open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if ( keyPath == "messageList" ) {
             if ( !self.isRunning ) {
@@ -57,13 +59,4 @@ open class DZPopupMessageQueueManager: NSObject {
             }
         }
     }
-    
-//    - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-//    if ( [keyPath isEqualToString:@"messageList"] ) {
-//    if ( !self.isRunning ) {
-//    [self next];
-//    }
-//    }
-//    }
-
 }
