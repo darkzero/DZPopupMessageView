@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class DZPopupMessageQueueManager: NSObject {
+public class DZPopupMessageQueueManager: NSObject {
     // MARK: - Properties
     lazy var messageQueuse: DZPopupMessageQueue = {
         let queue = DZPopupMessageQueue.shared
@@ -24,23 +24,24 @@ open class DZPopupMessageQueueManager: NSObject {
     override init() {
         super.init()
         self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.old,.new]), context: nil)
+        //self.messageQueuse.addObserver(self, forKeyPath: #keyPath(DZPopupMessageQueue.messageList), options: NSKeyValueObservingOptions([.old,.new]), context: nil)
     }
     
     // MARK: - Open Functions
-    open func addPopupMessage(_ message: DZPopupMessageView) {
+    public func addPopupMessage(_ message: DZPopupMessageView) {
         DispatchQueue(label: "add_popup_message", attributes: []).sync {
             self.messageQueuse.addMessage(message)
         }
     }
     
-    open func clearAllQueue() {
+    public func clearAllQueue() {
         if ( isRunning ) {
             isRunning = false
             self.messageQueuse.messageList.removeAll()
         }
     }
     
-    open func next() {
+    public func next() {
         if ( self.messageQueuse.count() > 0  ) {
             self.isRunning = true
             let msgPopup = (self.messageQueuse.messageList.last)! as DZPopupMessageView
@@ -52,8 +53,8 @@ open class DZPopupMessageQueueManager: NSObject {
     }
     
     // MARK: - KVO
-    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if ( keyPath == "messageList" ) {
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if ( keyPath == #keyPath(DZPopupMessageQueue.messageList) ) {
             if ( !self.isRunning ) {
                 self.next()
             }
