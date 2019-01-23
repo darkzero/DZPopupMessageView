@@ -23,25 +23,25 @@ public class DZPopupMessageQueueManager: NSObject {
     // MARK: - init
     override init() {
         super.init()
-        self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.old,.new]), context: nil)
-        //self.messageQueuse.addObserver(self, forKeyPath: #keyPath(DZPopupMessageQueue.messageList), options: NSKeyValueObservingOptions([.old,.new]), context: nil)
+        //self.messageQueuse.addObserver(self, forKeyPath: "messageList", options: NSKeyValueObservingOptions([.old,.new]), context: nil)
+        self.messageQueuse.addObserver(self, forKeyPath: #keyPath(DZPopupMessageQueue.messageList), options: NSKeyValueObservingOptions([.old,.new]), context: nil)
     }
     
     // MARK: - Open Functions
-    public func addPopupMessage(_ message: DZPopupMessageView) {
+    internal func addPopupMessage(_ message: DZPopupMessageView) {
         DispatchQueue(label: "add_popup_message", attributes: []).sync {
             self.messageQueuse.addMessage(message)
         }
     }
     
-    public func clearAllQueue() {
+    internal func clearAllQueue() {
         if ( isRunning ) {
             isRunning = false
             self.messageQueuse.messageList.removeAll()
         }
     }
     
-    public func next() {
+    internal func next() {
         if ( self.messageQueuse.count() > 0  ) {
             self.isRunning = true
             let msgPopup = (self.messageQueuse.messageList.last)! as DZPopupMessageView

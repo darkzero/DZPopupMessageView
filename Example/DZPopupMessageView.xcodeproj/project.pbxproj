@@ -7,28 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02C78202C4E2B4671ECD4C40 /* Pods_DZPopupMessageView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B45FA91163D4AA0387926C /* Pods_DZPopupMessageView_Tests.framework */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		017EEC450519ADB27498E845 /* Pods_DZPopupMessageSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A0F062D3E1A9E87BC3F66F3 /* Pods_DZPopupMessageSample.framework */; };
+		B7AB19E721F778240037FF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB19E621F778240037FF79 /* AppDelegate.swift */; };
+		B7AB19E921F778240037FF79 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB19E821F778240037FF79 /* HomeViewController.swift */; };
+		B7AB19EC21F778240037FF79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AB19EA21F778240037FF79 /* Main.storyboard */; };
+		B7AB19EE21F778260037FF79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7AB19ED21F778260037FF79 /* Assets.xcassets */; };
+		B7AB19F121F778260037FF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7AB19EF21F778260037FF79 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		311366847F064059C5BE25E4 /* Pods-DZPopupMessageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPopupMessageView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZPopupMessageView_Tests/Pods-DZPopupMessageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		51B45FA91163D4AA0387926C /* Pods_DZPopupMessageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZPopupMessageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54AC604F1540970EB7C288B6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* DZPopupMessageView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DZPopupMessageView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		92621446669623DBB6213BC5 /* Pods-DZPopupMessageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPopupMessageView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZPopupMessageView_Tests/Pods-DZPopupMessageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		871F51F49D4D2AA913F97A07 /* Pods-DZPopupMessageSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPopupMessageSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-DZPopupMessageSample/Pods-DZPopupMessageSample.release.xcconfig"; sourceTree = "<group>"; };
+		8A0F062D3E1A9E87BC3F66F3 /* Pods_DZPopupMessageSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZPopupMessageSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AB19E421F778240037FF79 /* DZPopupMessageSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DZPopupMessageSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7AB19E621F778240037FF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7AB19E821F778240037FF79 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B7AB19EB21F778240037FF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7AB19ED21F778260037FF79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7AB19F021F778260037FF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7AB19F221F778260037FF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDC6267A449B2ACE0DC0EDF3 /* Pods-DZPopupMessageSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPopupMessageSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZPopupMessageSample/Pods-DZPopupMessageSample.debug.xcconfig"; sourceTree = "<group>"; };
 		BDE698BCF10D49981C347616 /* DZPopupMessageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DZPopupMessageView.podspec; path = ../DZPopupMessageView.podspec; sourceTree = "<group>"; };
 		D03624A6158B65B6E989B1EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		B7AB19E121F778240037FF79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C78202C4E2B4671ECD4C40 /* Pods_DZPopupMessageView_Tests.framework in Frameworks */,
+				017EEC450519ADB27498E845 /* Pods_DZPopupMessageSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				51B45FA91163D4AA0387926C /* Pods_DZPopupMessageView_Tests.framework */,
+				8A0F062D3E1A9E87BC3F66F3 /* Pods_DZPopupMessageSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -46,8 +56,8 @@
 		5520A30B07F4C9D34ED449D0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				92621446669623DBB6213BC5 /* Pods-DZPopupMessageView_Tests.debug.xcconfig */,
-				311366847F064059C5BE25E4 /* Pods-DZPopupMessageView_Tests.release.xcconfig */,
+				BDC6267A449B2ACE0DC0EDF3 /* Pods-DZPopupMessageSample.debug.xcconfig */,
+				871F51F49D4D2AA913F97A07 /* Pods-DZPopupMessageSample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -56,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				B7AB19E521F778240037FF79 /* DZPopupMessageSample */,
 				607FACD11AFB9204008FA782 /* Products */,
 				5520A30B07F4C9D34ED449D0 /* Pods */,
 				0F1E23D6973A3C8E4E04C45A /* Frameworks */,
@@ -66,26 +76,9 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* DZPopupMessageView_Tests.xctest */,
+				B7AB19E421F778240037FF79 /* DZPopupMessageSample.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -98,28 +91,40 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B7AB19E521F778240037FF79 /* DZPopupMessageSample */ = {
+			isa = PBXGroup;
+			children = (
+				B7AB19E621F778240037FF79 /* AppDelegate.swift */,
+				B7AB19E821F778240037FF79 /* HomeViewController.swift */,
+				B7AB19EA21F778240037FF79 /* Main.storyboard */,
+				B7AB19ED21F778260037FF79 /* Assets.xcassets */,
+				B7AB19EF21F778260037FF79 /* LaunchScreen.storyboard */,
+				B7AB19F221F778260037FF79 /* Info.plist */,
+			);
+			path = DZPopupMessageSample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* DZPopupMessageView_Tests */ = {
+		B7AB19E321F778240037FF79 /* DZPopupMessageSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DZPopupMessageView_Tests" */;
+			buildConfigurationList = B7AB19F321F778260037FF79 /* Build configuration list for PBXNativeTarget "DZPopupMessageSample" */;
 			buildPhases = (
-				E4457A72E279F7AB86491A19 /* 📦 Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				5B5EB549A5766150FC4A0C2C /* 📦 Embed Pods Frameworks */,
-				E92E4DA783FBCF29B2349A61 /* 📦 Copy Pods Resources */,
+				35FA775611442A3866306756 /* [CP] Check Pods Manifest.lock */,
+				B7AB19E021F778240037FF79 /* Sources */,
+				B7AB19E121F778240037FF79 /* Frameworks */,
+				B7AB19E221F778240037FF79 /* Resources */,
+				8336EFA78D847C147C69CFEB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DZPopupMessageView_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* DZPopupMessageView_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = DZPopupMessageSample;
+			productName = DZPopupMessageSample;
+			productReference = B7AB19E421F778240037FF79 /* DZPopupMessageSample.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,15 +132,14 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
+					B7AB19E321F778240037FF79 = {
+						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = XA393XM8GG;
-						LastSwiftMigration = 0910;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -152,79 +156,93 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* DZPopupMessageView_Tests */,
+				B7AB19E321F778240037FF79 /* DZPopupMessageSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		B7AB19E221F778240037FF79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AB19F121F778260037FF79 /* LaunchScreen.storyboard in Resources */,
+				B7AB19EE21F778260037FF79 /* Assets.xcassets in Resources */,
+				B7AB19EC21F778240037FF79 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B5EB549A5766150FC4A0C2C /* 📦 Embed Pods Frameworks */ = {
+		35FA775611442A3866306756 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DZPopupMessageSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DZPopupMessageView_Tests/Pods-DZPopupMessageView_Tests-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E4457A72E279F7AB86491A19 /* 📦 Check Pods Manifest.lock */ = {
+		8336EFA78D847C147C69CFEB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DZPopupMessageSample/Pods-DZPopupMessageSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DZPopupMessageView/DZPopupMessageView.framework",
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZPopupMessageView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E92E4DA783FBCF29B2349A61 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DZPopupMessageView_Tests/Pods-DZPopupMessageView_Tests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DZPopupMessageSample/Pods-DZPopupMessageSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		B7AB19E021F778240037FF79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				B7AB19E921F778240037FF79 /* HomeViewController.swift in Sources */,
+				B7AB19E721F778240037FF79 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B7AB19EA21F778240037FF79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7AB19EB21F778240037FF79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7AB19EF21F778260037FF79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7AB19F021F778260037FF79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -326,45 +344,62 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
+		B7AB19F421F778260037FF79 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92621446669623DBB6213BC5 /* Pods-DZPopupMessageView_Tests.debug.xcconfig */;
+			baseConfigurationReference = BDC6267A449B2ACE0DC0EDF3 /* Pods-DZPopupMessageSample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = XA393XM8GG;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DZPopupMessageSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.darkzero.DZPopupMessageSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		607FACF41AFB9204008FA782 /* Release */ = {
+		B7AB19F521F778260037FF79 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 311366847F064059C5BE25E4 /* Pods-DZPopupMessageView_Tests.release.xcconfig */;
+			baseConfigurationReference = 871F51F49D4D2AA913F97A07 /* Pods-DZPopupMessageSample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XA393XM8GG;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = DZPopupMessageSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.darkzero.DZPopupMessageSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -380,11 +415,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DZPopupMessageView_Tests" */ = {
+		B7AB19F321F778260037FF79 /* Build configuration list for PBXNativeTarget "DZPopupMessageSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				B7AB19F421F778260037FF79 /* Debug */,
+				B7AB19F521F778260037FF79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

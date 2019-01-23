@@ -1,16 +1,16 @@
 {
   "name": "DZPopupMessageView",
-  "version": "0.1.0",
-  "summary": "A short description of DZPopupMessageView.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DZPopupMessageView",
+  "version": "0.2.0",
+  "summary": "DZPopupMessageView.",
+  "description": "Popup Message View with queue\n* How to use\n```\nDZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, DisappearAfter: <Disappear After x.x seconds>, Callback: <Callback Function>)\n```",
+  "homepage": "https://github.com/darkzero/DZPopupMessageView",
   "license": "MIT",
   "authors": {
     "darkzero": "darkzero_mk2@hotmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DZPopupMessageView.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/darkzero/DZPopupMessageView.git",
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

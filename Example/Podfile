@@ -1,6 +1,5 @@
+platform :ios, '9.3'
 use_frameworks!
-target 'DZPopupMessageView_Tests' do
+target 'DZPopupMessageSample' do
   pod 'DZPopupMessageView', :path => '../'
-  
-  
 end
