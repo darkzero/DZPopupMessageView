@@ -9,23 +9,12 @@
 import UIKit
 
 public class DZPopupMessageView: UIView {
-    public enum DisplayType: String {
-        case rise
-        case drop
-        case bubbleTop
-        case bubbleBottom
-    }
-    
-    public enum Theme {
-        case dark
-        case light
-    }
-    
     var parentView: UIView?
     var messageLabel: UILabel = UILabel(frame: CGRect(x: 10, y: 5, width: 220, height: 22))
     var callback:(()->Void)?
     var disappearDelay: TimeInterval = 1.0
     var displayType: DisplayType = .rise
+    var iconImage: UIImage?
     
     fileprivate var _message = ""
     var message:String {
@@ -69,8 +58,14 @@ public class DZPopupMessageView: UIView {
             self.backgroundColor = UIColor(white: 1.0, alpha: 0.9)
             self.layer.shadowColor = UIColor.gray.cgColor
             self.layer.shadowOpacity = 0.3
-            self.layer.borderWidth = 1
-            self.layer.borderColor = UIColor.lightGray.cgColor
+            //self.layer.borderWidth = 1
+            //self.layer.borderColor = UIColor.lightGray.cgColor
+        case .warning:
+            self.messageLabel.textColor = .white
+            self.backgroundColor = UIColor.orange
+        case .error:
+            self.messageLabel.textColor = .white
+            self.backgroundColor = UIColor.red
         }
         
         self.layer.masksToBounds = false
@@ -152,12 +147,15 @@ public class DZPopupMessageView: UIView {
 
 extension DZPopupMessageView {
     // MARK: -
-    public class func show(_ message: String) {
-        
+    public class func show(_ msg: DZPopupMessage) {
+        self.showPopupMessage(msg.message, theme: msg.theme, displayType: msg.displayType, inView: nil, DisappearAfter: msg.isappearDelay) {
+            //
+        }
     }
     
     // MARK: - Public Function
     public class func showPopupMessage(_ message: String,
+                                       //icon: UIImage? = nil,
                                        theme: Theme = .light,
                                        displayType: DisplayType = .rise,
                                        inView view: UIView? = nil,
@@ -170,10 +168,18 @@ extension DZPopupMessageView {
         else {
             msgView.parentView = UIApplication.shared.keyWindow
         }
+//        if let _icon = icon {
+//            let iconView = UIImageView(image: _icon)
+//            iconView.layer.cornerRadius = (msgView.bounds.height-4)/2
+//            iconView.contentMode = .scaleAspectFill
+//            iconView.clipsToBounds = true
+//            iconView.frame = CGRect(origin: CGPoint(x: 4, y: 4), size: CGSize(width: msgView.bounds.height-8, height: msgView.bounds.height-8))
+//            iconView.backgroundColor = .lightGray
+//            msgView.addSubview(iconView)
+//        }
         msgView.displayType     = displayType
         msgView.callback        = callback
         msgView.disappearDelay  = disappearDelay
-        
         DZPopupMessageQueueManager.shared.addPopupMessage(msgView)
     }
     

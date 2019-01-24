@@ -30,10 +30,10 @@ extension HomeViewController {
             DZPopupMessageView.showPopupMessage(msg)
             break
         case 2: // TODO: drop
-            DZPopupMessageView.showPopupMessage(msg, displayType: .drop)
+            DZPopupMessageView.showPopupMessage(msg, theme: .error, displayType: .drop)
             break
         case 3: // TODO: bubble top
-            DZPopupMessageView.showPopupMessage(msg, displayType: .bubbleTop)
+            DZPopupMessageView.showPopupMessage(msg, theme: .warning, displayType: .bubbleTop)
             break
         case 4: // TODO: bubble bottom
             DZPopupMessageView.showPopupMessage(msg, theme: .dark, displayType: .bubbleBottom)
