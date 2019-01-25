@@ -38,9 +38,9 @@ public class DZPopupMessage {
         DZPopupMessageQueueManager.shared.addPopupMessage(msgView)
     }
     
-    public class func show( _ text: String, theme: Theme = .light, type: MessageType = .info, display: DisplayType = .bubbleTop) {
+    public class func show( _ text: String, theme: Theme = .light, type: MessageType = .info, display: DisplayType = .bubbleTop, callback: (()->Void)? = nil) {
         let msg = Message(text: text, theme: theme, type: type, display: display, disappearDelay: 1.5)
-        self.show(msg)
+        self.show(msg, callback: callback)
     }
 }
 

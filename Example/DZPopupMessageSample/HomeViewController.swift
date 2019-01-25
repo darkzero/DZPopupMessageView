@@ -69,7 +69,10 @@ extension HomeViewController {
             }
         }()
         
-        DZPopupMessage.show(msg, theme: theme, type: type, display: display)
+        DZPopupMessage.show(msg, theme: theme, type: type, display: display, callback: {
+            //
+            print("aaaaaa")
+        })
     }
 }
 
