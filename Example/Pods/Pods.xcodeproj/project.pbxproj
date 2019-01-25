@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		07D275EE4DE6FF33722B8F8F54227458 /* Pods-DZPopupMessageSample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8F2CD018E102BC46055E789F289A9B /* Pods-DZPopupMessageSample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A4C8EDDA2C403A7BA54A5889E1E8569 /* DZPopupMessageQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB311EF3F96637F7B5018576E1699748 /* DZPopupMessageQueue.swift */; };
-		439451A214890DDEB0F44F23150FCCB9 /* DZPopupMessageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 635E242F79CE48D9054A906823675C05 /* DZPopupMessageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED9E72D506103D296370D99A4AF0478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2A305A101BE72481A51139C33DD8C084 /* DZPopupMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD5FA94B4C948ED2D44D9AA68BEE512 /* DZPopupMessageView.swift */; };
+		418767B8FFDAE3B47500BD0A8DE92904 /* DZPopupMessageQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2329E996E0C39DFCABC247FA360CE0F /* DZPopupMessageQueueManager.swift */; };
+		444E3471AD5DCB3CE60901BF7701E742 /* DZPopupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A2901A5B6B237A059409FAAF7C0C2C /* DZPopupMessage.swift */; };
 		4774E95F77115011DC79AFEA13B0D01B /* Pods-DZPopupMessageSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FA818A3AC73EE7DFC5FF90E46B0286 /* Pods-DZPopupMessageSample-dummy.m */; };
-		4DD060E78E3C5AAF14FDB304D8021A2F /* DZPopupMessageQueueManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937CEA778E095B1901212B34FB3982DC /* DZPopupMessageQueueManager.swift */; };
+		5DCF97F5DFCF7BE23C05A7D63EA54BEB /* DZPopupMessageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE4E8637AF5C6DBA5D262FDEDC23940 /* DZPopupMessageView-dummy.m */; };
+		72C3E31443E92CF2D95DBE62BA2B5FF6 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53938C8BA4C68D603BE4CA1EC8234D1D /* Image.xcassets */; };
 		7920F502C134FA7AEA53E2B82E3FDE19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		B1D33C96284ABE6E4B3098B7E040A902 /* DZPopupMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CB14AFECAB42DEF8D076330E75538 /* DZPopupMessageView.swift */; };
-		B7AB19F721F994660037FF79 /* DZPopupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AB19F621F994650037FF79 /* DZPopupMessage.swift */; };
-		CE3298C0E32FC42AC7A9F4ECC79AA9A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		E57D5FB44D2BB82A96CCDBCA2F870D8E /* DZPopupMessageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCB1F03EAC6F13713FCCB60CD82AD0EE /* DZPopupMessageView-dummy.m */; };
+		8B0CD68ADBBB7A5F41A55A45E73E7390 /* DZPopupMessageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B606E381C203DF846D0BDF33B8174CBC /* DZPopupMessageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC49865DCAA3E1E22D98F18846D280A1 /* DZPopupMessageQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314076BB33C6F10F48ECD8DE42F4151A /* DZPopupMessageQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,47 +25,48 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A7EAACA2734E9F72BC888CFFD2F8638E;
+			remoteGlobalIDString = EC75CDDCF889065D7B5D84A7E4A20EEF;
 			remoteInfo = DZPopupMessageView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E09C250DFC6311A42A6B17CD9714ADD /* DZPopupMessageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DZPopupMessageView.podspec; sourceTree = "<group>"; };
 		194663B8E0C840512667EF114E71CA9B /* Pods-DZPopupMessageSample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DZPopupMessageSample.modulemap"; sourceTree = "<group>"; };
-		1C2DAF11A6BF736414FB15B266E80F05 /* DZPopupMessageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZPopupMessageView.modulemap; sourceTree = "<group>"; };
-		20DEFEC9A34CF4905D4EE31605AE37B1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1A92CE5BC1778DAF150BBA0C368F0AC0 /* DZPopupMessageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZPopupMessageView.xcconfig; sourceTree = "<group>"; };
 		24B89DD18642B64C4A8C1138324CE6CE /* Pods-DZPopupMessageSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZPopupMessageSample.debug.xcconfig"; sourceTree = "<group>"; };
+		314076BB33C6F10F48ECD8DE42F4151A /* DZPopupMessageQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessageQueue.swift; path = DZPopupMessageView/Classes/DZPopupMessageQueue.swift; sourceTree = "<group>"; };
 		39663B602F2E96D4796990D8552F2F55 /* Pods-DZPopupMessageSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DZPopupMessageSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D90978066BA1BE952FD410B6C6F30E6 /* Pods_DZPopupMessageSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DZPopupMessageSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53938C8BA4C68D603BE4CA1EC8234D1D /* Image.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = DZPopupMessageView/Assets/Image.xcassets; sourceTree = "<group>"; };
 		547CFCC65B35830799FCD50E555914CC /* DZPopupMessageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DZPopupMessageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		635E242F79CE48D9054A906823675C05 /* DZPopupMessageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-umbrella.h"; sourceTree = "<group>"; };
-		655B9053BB869CFF4F0F2423C6B09424 /* DZPopupMessageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-prefix.pch"; sourceTree = "<group>"; };
-		7A2CB14AFECAB42DEF8D076330E75538 /* DZPopupMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessageView.swift; path = DZPopupMessageView/Classes/DZPopupMessageView.swift; sourceTree = "<group>"; };
-		865D6E179E2CEDAE5F3B67E3FB091E03 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		632144E7692E2090946456ADBBB9A461 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		6924211F5F084335B5BF1E397B059B20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7933FA1C8496BDBFF97525EA39F17E65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		89FA818A3AC73EE7DFC5FF90E46B0286 /* Pods-DZPopupMessageSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DZPopupMessageSample-dummy.m"; sourceTree = "<group>"; };
-		8E65613AA8BE51C892FFA22C36712230 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		937CEA778E095B1901212B34FB3982DC /* DZPopupMessageQueueManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessageQueueManager.swift; path = DZPopupMessageView/Classes/DZPopupMessageQueueManager.swift; sourceTree = "<group>"; };
+		907855C8FE569B310F39C1623C4F4C8F /* DZPopupMessageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DZPopupMessageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2329E996E0C39DFCABC247FA360CE0F /* DZPopupMessageQueueManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessageQueueManager.swift; path = DZPopupMessageView/Classes/DZPopupMessageQueueManager.swift; sourceTree = "<group>"; };
 		B35C4A48EBA35924DD3C90899790F76F /* Pods-DZPopupMessageSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DZPopupMessageSample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B7AB19F621F994650037FF79 /* DZPopupMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DZPopupMessage.swift; path = DZPopupMessageView/Classes/DZPopupMessage.swift; sourceTree = "<group>"; };
+		B5A2901A5B6B237A059409FAAF7C0C2C /* DZPopupMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessage.swift; path = DZPopupMessageView/Classes/DZPopupMessage.swift; sourceTree = "<group>"; };
+		B606E381C203DF846D0BDF33B8174CBC /* DZPopupMessageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-umbrella.h"; sourceTree = "<group>"; };
 		BA199FD13C334D210C0601D639518D01 /* Pods-DZPopupMessageSample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZPopupMessageSample-resources.sh"; sourceTree = "<group>"; };
-		BB311EF3F96637F7B5018576E1699748 /* DZPopupMessageQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessageQueue.swift; path = DZPopupMessageView/Classes/DZPopupMessageQueue.swift; sourceTree = "<group>"; };
 		C50C5BED94F2D226107CFCE200DE17DB /* Pods-DZPopupMessageSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DZPopupMessageSample.release.xcconfig"; sourceTree = "<group>"; };
+		C5FE822C43BEF663F6D53B831780538C /* DZPopupMessageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DZPopupMessageView-prefix.pch"; sourceTree = "<group>"; };
+		C730DCD06E023459A80863EEBEF99F56 /* DZPopupMessageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DZPopupMessageView.modulemap; sourceTree = "<group>"; };
 		CF8F2CD018E102BC46055E789F289A9B /* Pods-DZPopupMessageSample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DZPopupMessageSample-umbrella.h"; sourceTree = "<group>"; };
-		DCB1F03EAC6F13713FCCB60CD82AD0EE /* DZPopupMessageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZPopupMessageView-dummy.m"; sourceTree = "<group>"; };
+		CFD5FA94B4C948ED2D44D9AA68BEE512 /* DZPopupMessageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DZPopupMessageView.swift; path = DZPopupMessageView/Classes/DZPopupMessageView.swift; sourceTree = "<group>"; };
 		E0F3070D0F285F219E0E86FF2B7E31D8 /* Pods-DZPopupMessageSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DZPopupMessageSample-frameworks.sh"; sourceTree = "<group>"; };
 		E98B3B9F7BF7DE5D81DCF122F9F4B909 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF01BC574840FC3CA0207AA29961D1E7 /* DZPopupMessageView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DZPopupMessageView.xcconfig; sourceTree = "<group>"; };
+		FBE4E8637AF5C6DBA5D262FDEDC23940 /* DZPopupMessageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DZPopupMessageView-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6F37304BA26F5C167EC84ADD73B9D790 /* Frameworks */ = {
+		34CF775ACCB4CAC2410228A2FB1DCAA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3298C0E32FC42AC7A9F4ECC79AA9A6 /* Foundation.framework in Frameworks */,
+				1ED9E72D506103D296370D99A4AF0478 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +89,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		5507B762C9A4113FCD5AF9FE7ED69E8B /* DZPopupMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				B5A2901A5B6B237A059409FAAF7C0C2C /* DZPopupMessage.swift */,
+				314076BB33C6F10F48ECD8DE42F4151A /* DZPopupMessageQueue.swift */,
+				A2329E996E0C39DFCABC247FA360CE0F /* DZPopupMessageQueueManager.swift */,
+				CFD5FA94B4C948ED2D44D9AA68BEE512 /* DZPopupMessageView.swift */,
+				DEE4D89CB15D35E3B83D8B7284CD0F0C /* Pod */,
+				9FEEB638A1659B1008893DAFFE2B88E6 /* Resources */,
+				D91A5FA3EF003F0ADFA146DB1A24EB59 /* Support Files */,
+			);
+			name = DZPopupMessageView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,39 +112,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		79A5F5E37EB34430F054620E2B1F850E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0E09C250DFC6311A42A6B17CD9714ADD /* DZPopupMessageView.podspec */,
-				865D6E179E2CEDAE5F3B67E3FB091E03 /* LICENSE */,
-				20DEFEC9A34CF4905D4EE31605AE37B1 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				F0777783D0AB7E9917EBCBEA6BC40CFA /* Development Pods */,
+				EAAFC54661DEDCE4D21EBFC7B9490372 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				B3620BAA9C56470AE3A53E81BB249A9B /* Products */,
 				0F908354560F26BCCD0466768582E14D /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A861742B936FF593C47B555C42A9A533 /* DZPopupMessageView */ = {
+		9FEEB638A1659B1008893DAFFE2B88E6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BB311EF3F96637F7B5018576E1699748 /* DZPopupMessageQueue.swift */,
-				937CEA778E095B1901212B34FB3982DC /* DZPopupMessageQueueManager.swift */,
-				7A2CB14AFECAB42DEF8D076330E75538 /* DZPopupMessageView.swift */,
-				B7AB19F621F994650037FF79 /* DZPopupMessage.swift */,
-				79A5F5E37EB34430F054620E2B1F850E /* Pod */,
-				D8223373DDCAEB3F0D39F4AB5BBAE2A9 /* Support Files */,
+				53938C8BA4C68D603BE4CA1EC8234D1D /* Image.xcassets */,
 			);
-			name = DZPopupMessageView;
-			path = ../..;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		B3620BAA9C56470AE3A53E81BB249A9B /* Products */ = {
@@ -147,18 +148,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D8223373DDCAEB3F0D39F4AB5BBAE2A9 /* Support Files */ = {
+		D91A5FA3EF003F0ADFA146DB1A24EB59 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1C2DAF11A6BF736414FB15B266E80F05 /* DZPopupMessageView.modulemap */,
-				FF01BC574840FC3CA0207AA29961D1E7 /* DZPopupMessageView.xcconfig */,
-				DCB1F03EAC6F13713FCCB60CD82AD0EE /* DZPopupMessageView-dummy.m */,
-				655B9053BB869CFF4F0F2423C6B09424 /* DZPopupMessageView-prefix.pch */,
-				635E242F79CE48D9054A906823675C05 /* DZPopupMessageView-umbrella.h */,
-				8E65613AA8BE51C892FFA22C36712230 /* Info.plist */,
+				C730DCD06E023459A80863EEBEF99F56 /* DZPopupMessageView.modulemap */,
+				1A92CE5BC1778DAF150BBA0C368F0AC0 /* DZPopupMessageView.xcconfig */,
+				FBE4E8637AF5C6DBA5D262FDEDC23940 /* DZPopupMessageView-dummy.m */,
+				C5FE822C43BEF663F6D53B831780538C /* DZPopupMessageView-prefix.pch */,
+				B606E381C203DF846D0BDF33B8174CBC /* DZPopupMessageView-umbrella.h */,
+				6924211F5F084335B5BF1E397B059B20 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/DZPopupMessageView";
+			sourceTree = "<group>";
+		};
+		DEE4D89CB15D35E3B83D8B7284CD0F0C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				907855C8FE569B310F39C1623C4F4C8F /* DZPopupMessageView.podspec */,
+				632144E7692E2090946456ADBBB9A461 /* LICENSE */,
+				7933FA1C8496BDBFF97525EA39F17E65 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EAAFC54661DEDCE4D21EBFC7B9490372 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5507B762C9A4113FCD5AF9FE7ED69E8B /* DZPopupMessageView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		ECD10821C4803BD0EC2FF8D04C3D7BC7 /* Pods-DZPopupMessageSample */ = {
@@ -179,30 +198,22 @@
 			path = "Target Support Files/Pods-DZPopupMessageSample";
 			sourceTree = "<group>";
 		};
-		F0777783D0AB7E9917EBCBEA6BC40CFA /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A861742B936FF593C47B555C42A9A533 /* DZPopupMessageView */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3C086E0CD6B6B6B8EAB74BF859C5EDD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0CD68ADBBB7A5F41A55A45E73E7390 /* DZPopupMessageView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		893F74896B326C5D4F34B4C96A019479 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				07D275EE4DE6FF33722B8F8F54227458 /* Pods-DZPopupMessageSample-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B2EE06F11A70B1356DB4866A9B7F97 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				439451A214890DDEB0F44F23150FCCB9 /* DZPopupMessageView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,13 +238,14 @@
 			productReference = 3D90978066BA1BE952FD410B6C6F30E6 /* Pods_DZPopupMessageSample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7EAACA2734E9F72BC888CFFD2F8638E /* DZPopupMessageView */ = {
+		EC75CDDCF889065D7B5D84A7E4A20EEF /* DZPopupMessageView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98FF6FC3A90B31F301D67364FFED3E69 /* Build configuration list for PBXNativeTarget "DZPopupMessageView" */;
+			buildConfigurationList = CA91156DE74C01BC4C28AB82E3D9EF1C /* Build configuration list for PBXNativeTarget "DZPopupMessageView" */;
 			buildPhases = (
-				3F8B7ED39934F9E2AFFD54F7EE9B2B19 /* Sources */,
-				6F37304BA26F5C167EC84ADD73B9D790 /* Frameworks */,
-				89B2EE06F11A70B1356DB4866A9B7F97 /* Headers */,
+				61A5E4554F1728CDAA845D76CB296EEE /* Sources */,
+				34CF775ACCB4CAC2410228A2FB1DCAA6 /* Frameworks */,
+				305B4C25AEF4A1F2E0AAB708F0E53DE9 /* Resources */,
+				3C086E0CD6B6B6B8EAB74BF859C5EDD6 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -265,22 +277,33 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7EAACA2734E9F72BC888CFFD2F8638E /* DZPopupMessageView */,
+				EC75CDDCF889065D7B5D84A7E4A20EEF /* DZPopupMessageView */,
 				6D73C77641DD6EF577D996A0320CDFDF /* Pods-DZPopupMessageSample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		305B4C25AEF4A1F2E0AAB708F0E53DE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C3E31443E92CF2D95DBE62BA2B5FF6 /* Image.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		3F8B7ED39934F9E2AFFD54F7EE9B2B19 /* Sources */ = {
+		61A5E4554F1728CDAA845D76CB296EEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4C8EDDA2C403A7BA54A5889E1E8569 /* DZPopupMessageQueue.swift in Sources */,
-				B7AB19F721F994660037FF79 /* DZPopupMessage.swift in Sources */,
-				4DD060E78E3C5AAF14FDB304D8021A2F /* DZPopupMessageQueueManager.swift in Sources */,
-				E57D5FB44D2BB82A96CCDBCA2F870D8E /* DZPopupMessageView-dummy.m in Sources */,
-				B1D33C96284ABE6E4B3098B7E040A902 /* DZPopupMessageView.swift in Sources */,
+				444E3471AD5DCB3CE60901BF7701E742 /* DZPopupMessage.swift in Sources */,
+				BC49865DCAA3E1E22D98F18846D280A1 /* DZPopupMessageQueue.swift in Sources */,
+				418767B8FFDAE3B47500BD0A8DE92904 /* DZPopupMessageQueueManager.swift in Sources */,
+				5DCF97F5DFCF7BE23C05A7D63EA54BEB /* DZPopupMessageView-dummy.m in Sources */,
+				2A305A101BE72481A51139C33DD8C084 /* DZPopupMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +321,7 @@
 		3420A71DA7D34F551BC217CDA70F15C9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DZPopupMessageView;
-			target = A7EAACA2734E9F72BC888CFFD2F8638E /* DZPopupMessageView */;
+			target = EC75CDDCF889065D7B5D84A7E4A20EEF /* DZPopupMessageView */;
 			targetProxy = E7904F8E30D641DE2783F24F188F512D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -332,6 +355,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C648A395CE58EBC61C6B9454B1017CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A92CE5BC1778DAF150BBA0C368F0AC0 /* DZPopupMessageView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DZPopupMessageView/DZPopupMessageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DZPopupMessageView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DZPopupMessageView/DZPopupMessageView.modulemap";
+				PRODUCT_MODULE_NAME = DZPopupMessageView;
+				PRODUCT_NAME = DZPopupMessageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -402,9 +458,9 @@
 			};
 			name = Debug;
 		};
-		AAD1AD95CA8F1CEDA8A051DAC6E107AA /* Debug */ = {
+		9977905401368691EC791D6E9E1E9604 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF01BC574840FC3CA0207AA29961D1E7 /* DZPopupMessageView.xcconfig */;
+			baseConfigurationReference = 1A92CE5BC1778DAF150BBA0C368F0AC0 /* DZPopupMessageView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -418,7 +474,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/DZPopupMessageView/DZPopupMessageView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/DZPopupMessageView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/DZPopupMessageView/DZPopupMessageView.modulemap";
 				PRODUCT_MODULE_NAME = DZPopupMessageView;
@@ -527,39 +583,6 @@
 			};
 			name = Release;
 		};
-		EF5F7839B0F202E37F7920C28449155A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF01BC574840FC3CA0207AA29961D1E7 /* DZPopupMessageView.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DZPopupMessageView/DZPopupMessageView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DZPopupMessageView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DZPopupMessageView/DZPopupMessageView.modulemap";
-				PRODUCT_MODULE_NAME = DZPopupMessageView;
-				PRODUCT_NAME = DZPopupMessageView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,11 +604,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98FF6FC3A90B31F301D67364FFED3E69 /* Build configuration list for PBXNativeTarget "DZPopupMessageView" */ = {
+		CA91156DE74C01BC4C28AB82E3D9EF1C /* Build configuration list for PBXNativeTarget "DZPopupMessageView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAD1AD95CA8F1CEDA8A051DAC6E107AA /* Debug */,
-				EF5F7839B0F202E37F7920C28449155A /* Release */,
+				9977905401368691EC791D6E9E1E9604 /* Debug */,
+				7C648A395CE58EBC61C6B9454B1017CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

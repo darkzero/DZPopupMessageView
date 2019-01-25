@@ -24,54 +24,62 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFj-Dk-1ZX">
-                                <rect key="frame" x="170.5" y="160" width="34" height="30"/>
-                                <state key="normal" title="Drop"/>
-                                <connections>
-                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Hq-7d-yNc"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy5-hZ-mMW">
-                                <rect key="frame" x="122" y="198" width="131" height="30"/>
-                                <state key="normal" title="Bubble Top"/>
-                                <connections>
-                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJa-iA-9P7"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mg-WZ-dm7">
-                                <rect key="frame" x="136" y="236" width="103" height="30"/>
-                                <state key="normal" title="Bubble Bottom"/>
-                                <connections>
-                                    <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hmu-68-uIo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBp-XA-66z">
-                                <rect key="frame" x="172.5" y="122" width="30" height="30"/>
-                                <state key="normal" title="Rise"/>
+                                <rect key="frame" x="135.5" y="238" width="104" height="30"/>
+                                <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="onButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0F-Zw-4iZ"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Xlr-qD-jHv">
+                                <rect key="frame" x="16" y="122" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Light"/>
+                                    <segment title="Dark"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7lz-nq-raq">
+                                <rect key="frame" x="16" y="158" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Info"/>
+                                    <segment title="Warning"/>
+                                    <segment title="Error"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="frV-gT-uOs">
+                                <rect key="frame" x="16" y="194" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Rise"/>
+                                    <segment title="Drop"/>
+                                    <segment title="Bubble Top"/>
+                                    <segment title="Bubble Bottom"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GFj-Dk-1ZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Oc-Zc-QfV"/>
-                            <constraint firstItem="GFj-Dk-1ZX" firstAttribute="top" secondItem="gBp-XA-66z" secondAttribute="bottom" constant="8" id="87l-VA-eN4"/>
-                            <constraint firstItem="Vy5-hZ-mMW" firstAttribute="top" secondItem="GFj-Dk-1ZX" secondAttribute="bottom" constant="8" id="Ldm-8h-Mot"/>
+                            <constraint firstItem="Xlr-qD-jHv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="1CI-4d-krw"/>
+                            <constraint firstItem="Xlr-qD-jHv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5W8-XX-Gs3"/>
+                            <constraint firstItem="frV-gT-uOs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="CnT-Hb-pFF"/>
+                            <constraint firstItem="7lz-nq-raq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Pfz-CJ-nLe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dxX-zB-gp7" secondAttribute="trailing" constant="16" id="R1t-k1-C0N"/>
-                            <constraint firstItem="Vy5-hZ-mMW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJR-5z-pPu"/>
-                            <constraint firstItem="1mg-WZ-dm7" firstAttribute="top" secondItem="Vy5-hZ-mMW" secondAttribute="bottom" constant="8" id="W7J-57-i7I"/>
-                            <constraint firstItem="gBp-XA-66z" firstAttribute="top" secondItem="dxX-zB-gp7" secondAttribute="bottom" constant="8" id="bxv-oh-InH"/>
-                            <constraint firstItem="Vy5-hZ-mMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="etr-V1-blK"/>
+                            <constraint firstItem="frV-gT-uOs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VPR-Mm-IVc"/>
+                            <constraint firstItem="Xlr-qD-jHv" firstAttribute="top" secondItem="dxX-zB-gp7" secondAttribute="bottom" constant="8" id="Vzz-v7-6Bj"/>
+                            <constraint firstItem="gBp-XA-66z" firstAttribute="top" secondItem="frV-gT-uOs" secondAttribute="bottom" constant="16" id="Z6C-fA-h2j"/>
+                            <constraint firstItem="7lz-nq-raq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJ5-Hg-AmQ"/>
                             <constraint firstItem="dxX-zB-gp7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="hZM-3l-qu7"/>
                             <constraint firstItem="gBp-XA-66z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="in1-AK-Wcy"/>
-                            <constraint firstItem="1mg-WZ-dm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nQS-2H-jUt"/>
                             <constraint firstItem="dxX-zB-gp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nRd-is-yia"/>
+                            <constraint firstItem="frV-gT-uOs" firstAttribute="top" secondItem="7lz-nq-raq" secondAttribute="bottom" constant="8" id="tiM-uD-ek9"/>
+                            <constraint firstItem="7lz-nq-raq" firstAttribute="top" secondItem="Xlr-qD-jHv" secondAttribute="bottom" constant="8" id="y8V-yq-oLf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="displaySegment" destination="frV-gT-uOs" id="rOz-Ka-5b6"/>
                         <outlet property="messageField" destination="dxX-zB-gp7" id="o2l-pc-Zf2"/>
+                        <outlet property="themeSegment" destination="Xlr-qD-jHv" id="JXZ-Pu-a4D"/>
+                        <outlet property="typeSegment" destination="7lz-nq-raq" id="kBN-ZO-SGh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

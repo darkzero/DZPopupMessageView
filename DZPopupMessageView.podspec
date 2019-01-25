@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DZPopupMessageView"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "DZPopupMessageView."
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,8 @@ DZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, Disappe
   s.author           = { "darkzero" => "darkzero_mk2@hotmail.com" }
   s.source           = { :git => "https://github.com/darkzero/DZPopupMessageView.git", :tag => s.version.to_s }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'DZPopupMessageView/Classes/**/*'
+  s.resources = ['DZPopupMessageView/Assets/*.png', 'DZPopupMessageView/Assets/*.xcassets']
 end

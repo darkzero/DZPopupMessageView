@@ -11,6 +11,9 @@ import DZPopupMessageView
 
 class HomeViewController: UIViewController {
     @IBOutlet var messageField: UITextField!
+    @IBOutlet var themeSegment: UISegmentedControl!
+    @IBOutlet var typeSegment: UISegmentedControl!
+    @IBOutlet var displaySegment: UISegmentedControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,23 +28,48 @@ extension HomeViewController {
         if msg.count <= 0 {
             msg = "Test Message"
         }
-        switch sender.tag {
-        case 1: // rise
-            DZPopupMessageView.showPopupMessage(msg)
-            break
-        case 2: // TODO: drop
-            DZPopupMessageView.showPopupMessage(msg, theme: .error, displayType: .drop)
-            break
-        case 3: // TODO: bubble top
-            DZPopupMessageView.showPopupMessage(msg, theme: .warning, displayType: .bubbleTop)
-            break
-        case 4: // TODO: bubble bottom
-            DZPopupMessageView.showPopupMessage(msg, theme: .dark, displayType: .bubbleBottom)
-            break
-        default:
-            DZPopupMessageView.showPopupMessage(msg)
-            break
-        }
+        
+        // theme
+        let theme: DZPopupMessage.Theme = {
+            switch self.themeSegment.selectedSegmentIndex {
+            case 0:
+                return .light
+            case 1:
+                return .dark
+            default:
+                return .light
+            }
+        }()
+        // type
+        let type: DZPopupMessage.MessageType = {
+            switch self.typeSegment.selectedSegmentIndex {
+            case 0:
+                return .info
+            case 1:
+                return .warning
+            case 2:
+                return .error
+            default:
+                return .info
+            }
+        }()
+        // display
+        let display: DZPopupMessage.DisplayType = {
+            switch self.displaySegment.selectedSegmentIndex {
+            case 0:
+                return .rise
+            case 1:
+                return .drop
+            case 2:
+                return .bubbleTop
+            case 2:
+                return .bubbleBottom
+            default:
+                return .bubbleBottom
+            }
+        }()
+        
+        DZPopupMessage.show(msg, theme: theme, type: type, display: display)
     }
 }
 

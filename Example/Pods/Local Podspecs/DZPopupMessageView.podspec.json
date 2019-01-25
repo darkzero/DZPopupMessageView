@@ -1,6 +1,6 @@
 {
   "name": "DZPopupMessageView",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "DZPopupMessageView.",
   "description": "Popup Message View with queue\n* How to use\n```\nDZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, DisappearAfter: <Disappear After x.x seconds>, Callback: <Callback Function>)\n```",
   "homepage": "https://github.com/darkzero/DZPopupMessageView",
@@ -10,10 +10,14 @@
   },
   "source": {
     "git": "https://github.com/darkzero/DZPopupMessageView.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.3"
   },
-  "source_files": "DZPopupMessageView/Classes/**/*"
+  "source_files": "DZPopupMessageView/Classes/**/*",
+  "resources": [
+    "DZPopupMessageView/Assets/*.png",
+    "DZPopupMessageView/Assets/*.xcassets"
+  ]
 }

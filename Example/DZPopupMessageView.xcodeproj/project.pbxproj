@@ -28,7 +28,7 @@
 		B7AB19F021F778260037FF79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7AB19F221F778260037FF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDC6267A449B2ACE0DC0EDF3 /* Pods-DZPopupMessageSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DZPopupMessageSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DZPopupMessageSample/Pods-DZPopupMessageSample.debug.xcconfig"; sourceTree = "<group>"; };
-		BDE698BCF10D49981C347616 /* DZPopupMessageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DZPopupMessageView.podspec; path = ../DZPopupMessageView.podspec; sourceTree = "<group>"; };
+		BDE698BCF10D49981C347616 /* DZPopupMessageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DZPopupMessageView.podspec; path = ../DZPopupMessageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D03624A6158B65B6E989B1EE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

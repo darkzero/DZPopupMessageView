@@ -1,5 +1,5 @@
 PODS:
-  - DZPopupMessageView (0.2.0)
+  - DZPopupMessageView (0.3.0)
 
 DEPENDENCIES:
   - DZPopupMessageView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DZPopupMessageView: bbb235c8c61b505b99c46eca493b0c7e83ed214c
+  DZPopupMessageView: f23bbeac7e04fbfbec3d18774fd0bd538fdd0de1
 
 PODFILE CHECKSUM: dfbffb7f0c0cd9f943c0b2ae47b23643eccfa088
 
