@@ -17,13 +17,58 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-Popup Message View with queue
-* How to use
+  s.description = <<-DESC
+## Popup Message View with queue
+### How to use
+  
+* **Import**
+  
+```Swift
+import DZPopupMessageView
 ```
-DZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, DisappearAfter: <Disappear After x.x seconds>, Callback: <Callback Function>)
+  
+* **Show message**
+  
+```Swift
+/// paramters
+/// - message text: String
+/// - theme: DZPopupMessage.Theme(enum)
+///     can be nil, default is .light
+/// - type: DZPopupMessage.MessageType(enum)
+///     can be nil, default is .info
+/// - display: DZPopupMessage.DisplayType(enum)
+///     can be nil, default is .bubbleTop
+DZPopupMessage.show({msg text}, theme: {theme}, type: {type}, display: {display}, callback: {
+    // do some thing
+    })
 ```
-                       DESC
+                      
+* **Paramaters**
+    * theme
+        - DZPopupMessage.Theme.light
+        - DZPopupMessage.Theme.dark
+                      
+    * type
+        - DZPopupMessage.MessageType.info
+        - DZPopupMessage.MessageType.warning
+        - DZPopupMessage.MessageType.error
+                      
+    * display
+        - DZPopupMessage.DisplayType.rise
+        - DZPopupMessage.DisplayType.drop
+        - DZPopupMessage.DisplayType.bubbleTop
+        - DZPopupMessage.DisplayType.bubbleBottom
+                      
+#### Can be used like these
+                      
+```Swift
+DZPopupMessage.show("Message body");
+DZPopupMessage.show({msg text}, theme: {theme}, type: {type}, display: {display});
+DZPopupMessage.show({msg text}, theme: {theme}, type: {type});
+...
+```
+
+DESC
 
   s.homepage         = "https://github.com/darkzero/DZPopupMessageView"
   s.license          = 'MIT'
