@@ -7,7 +7,7 @@
 
 ## simple message display queue
 
-- How to use
+### How to use
 
 * Import
 
