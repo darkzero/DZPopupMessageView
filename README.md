@@ -56,6 +56,8 @@ DZPopupMessage.show({msg text}, theme: {theme}, type: {type});
 ...
 ```
 
+## Blog post
+https://darkzero.me/blog/2019/01/27/dzpopupmessageview%E6%9B%B4%E6%96%B0/
 
 ## Requirements
 Xcode
