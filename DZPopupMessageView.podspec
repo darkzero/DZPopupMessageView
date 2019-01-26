@@ -33,5 +33,8 @@ DZPopupMessageView.showPopupMessage(<Message String>, inView: <In View>, Disappe
   s.ios.deployment_target = '9.3'
 
   s.source_files = 'DZPopupMessageView/Classes/**/*'
-  s.resources = ['DZPopupMessageView/Assets/*.png', 'DZPopupMessageView/Assets/*.xcassets']
+  s.resources = ['DZPopupMessageView/Assets/*.xcassets']
+  #s.resource_bundles = {
+  #  "DZPopupMessageView" => ['DZPopupMessageView/Assets/*.xcassets']
+  #}
 end

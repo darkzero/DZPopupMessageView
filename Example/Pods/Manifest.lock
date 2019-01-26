@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DZPopupMessageView: f23bbeac7e04fbfbec3d18774fd0bd538fdd0de1
+  DZPopupMessageView: 6cb3793abc362ac4dd5f77bbce596081c247fd1e
 
 PODFILE CHECKSUM: dfbffb7f0c0cd9f943c0b2ae47b23643eccfa088
 

@@ -55,6 +55,9 @@
                                     <segment title="Bubble Bottom"/>
                                 </segments>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_mark" translatesAutoresizingMaskIntoConstraints="NO" id="Prm-XD-Hjn">
+                                <rect key="frame" x="171.5" y="317.5" width="32" height="32"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -71,12 +74,15 @@
                             <constraint firstItem="gBp-XA-66z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="in1-AK-Wcy"/>
                             <constraint firstItem="dxX-zB-gp7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nRd-is-yia"/>
                             <constraint firstItem="frV-gT-uOs" firstAttribute="top" secondItem="7lz-nq-raq" secondAttribute="bottom" constant="8" id="tiM-uD-ek9"/>
+                            <constraint firstItem="Prm-XD-Hjn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2r-MB-MtO"/>
                             <constraint firstItem="7lz-nq-raq" firstAttribute="top" secondItem="Xlr-qD-jHv" secondAttribute="bottom" constant="8" id="y8V-yq-oLf"/>
+                            <constraint firstItem="Prm-XD-Hjn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zbR-8N-We4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="displaySegment" destination="frV-gT-uOs" id="rOz-Ka-5b6"/>
+                        <outlet property="imageView" destination="Prm-XD-Hjn" id="O0F-N1-UNX"/>
                         <outlet property="messageField" destination="dxX-zB-gp7" id="o2l-pc-Zf2"/>
                         <outlet property="themeSegment" destination="Xlr-qD-jHv" id="JXZ-Pu-a4D"/>
                         <outlet property="typeSegment" destination="7lz-nq-raq" id="kBN-ZO-SGh"/>
@@ -87,4 +93,7 @@
             <point key="canvasLocation" x="128.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="check_mark" width="32" height="32"/>
+    </resources>
 </document>

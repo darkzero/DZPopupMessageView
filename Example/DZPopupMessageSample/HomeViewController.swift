@@ -14,10 +14,14 @@ class HomeViewController: UIViewController {
     @IBOutlet var themeSegment: UISegmentedControl!
     @IBOutlet var typeSegment: UISegmentedControl!
     @IBOutlet var displaySegment: UISegmentedControl!
+    
+    @IBOutlet var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //let image = UIImage(named: "dz_icon_info", in: Bundle(for: DZPopupMessageView.self), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
+        //self.imageView.image = image
     }
 }
 
@@ -62,7 +66,7 @@ extension HomeViewController {
                 return .drop
             case 2:
                 return .bubbleTop
-            case 2:
+            case 3:
                 return .bubbleBottom
             default:
                 return .bubbleBottom

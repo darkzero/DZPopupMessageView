@@ -91,7 +91,7 @@ public class DZPopupMessageView: UIView {
                 self.backgroundColor = UIColor(white: 0.7, alpha: 0.9)
             }
             self.messageLabel.textColor = .red
-            self.messageLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
+            //self.messageLabel.font = UIFont.boldSystemFont(ofSize: 14.0)
             imageStr = "dz_icon_error"
             self.iconImageView.tintColor = .red
             break

@@ -9,22 +9,50 @@
 
 - How to use
 
+* Import
+
 ```Swift
-DZPopupMessageView.showPopupMessage(<Message String>, 
-                                    inView: <In View>, /*_nullable, default is UIApplocation.shared.keywindow*/
-                                    disappearAfter: <Disappear After x.x seconds>, /*_nullable, default is 1.5*/
-                                    callback: <Callback Function> /*_nullable*/);
+import DZPopupMessageView
 ```
+
+* Show message
+
+```Swift
+/// paramters
+/// - message text: String
+/// - theme: DZPopupMessage.Theme(enum)
+///     can be nil, default is .light
+/// - type: DZPopupMessage.MessageType(enum)
+///     can be nil, default is .info
+/// - display: DZPopupMessage.DisplayType(enum)
+///     can be nil, default is .bubbleTop
+DZPopupMessage.show({msg text}, theme: {theme}, type: {type}, display: {display}, callback: {
+    // do some thing
+})
+```
+
+* Paramaters
+    * theme
+        DZPopupMessage.Theme.light
+        DZPopupMessage.Theme.dark
+        
+    * type
+        DZPopupMessage.MessageType.info
+        DZPopupMessage.MessageType.warning
+        DZPopupMessage.MessageType.error
+        
+    * display
+        DZPopupMessage.DisplayType.rise
+        DZPopupMessage.DisplayType.drop
+        DZPopupMessage.DisplayType.bubbleTop
+        DZPopupMessage.DisplayType.bubbleBottom
 
 Can be used like these
 
 ```Swift
-DZPopupMessageView.showPopupMessage("Message body");
-DZPopupMessageView.showPopupMessage("Message body", inView: <Target View>);
-DZPopupMessageView.showPopupMessage("Message body", inView: <Target View>, disappearAfter: 1.0);
-DZPopupMessageView.showPopupMessage("Message body", inView: <Target View>, disappearAfter: 1.0) {
-    // Do something
-};
+DZPopupMessage.show("Message body");
+DZPopupMessage.show({msg text}, theme: {theme}, type: {type}, display: {display});
+DZPopupMessage.show({msg text}, theme: {theme}, type: {type});
 ...
 ```
 

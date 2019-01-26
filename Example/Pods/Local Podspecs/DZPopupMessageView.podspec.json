@@ -17,7 +17,6 @@
   },
   "source_files": "DZPopupMessageView/Classes/**/*",
   "resources": [
-    "DZPopupMessageView/Assets/*.png",
     "DZPopupMessageView/Assets/*.xcassets"
   ]
 }
