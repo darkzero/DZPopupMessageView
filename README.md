@@ -9,13 +9,13 @@
 
 ### How to use
 
-* Import
+* **Import**
 
 ```Swift
 import DZPopupMessageView
 ```
 
-* Show message
+* **Show message**
 
 ```Swift
 /// paramters
@@ -31,23 +31,23 @@ DZPopupMessage.show({msg text}, theme: {theme}, type: {type}, display: {display}
 })
 ```
 
-* Paramaters
+* **Paramaters**
     * theme
-        DZPopupMessage.Theme.light
-        DZPopupMessage.Theme.dark
+        - DZPopupMessage.Theme.light
+        - DZPopupMessage.Theme.dark
         
     * type
-        DZPopupMessage.MessageType.info
-        DZPopupMessage.MessageType.warning
-        DZPopupMessage.MessageType.error
+        - DZPopupMessage.MessageType.info
+        - DZPopupMessage.MessageType.warning
+        - DZPopupMessage.MessageType.error
         
     * display
-        DZPopupMessage.DisplayType.rise
-        DZPopupMessage.DisplayType.drop
-        DZPopupMessage.DisplayType.bubbleTop
-        DZPopupMessage.DisplayType.bubbleBottom
+        - DZPopupMessage.DisplayType.rise
+        - DZPopupMessage.DisplayType.drop
+        - DZPopupMessage.DisplayType.bubbleTop
+        - DZPopupMessage.DisplayType.bubbleBottom
 
-Can be used like these
+#### Can be used like these
 
 ```Swift
 DZPopupMessage.show("Message body");
