@@ -118,7 +118,7 @@ extension DZPopupMessageView {
         //
         self.parentView?.addSubview(self)
         let inset = DZPopupMessageView.safeAreaInsetsOf(self.parentView!)
-        print(inset)
+        //print(inset)
         switch self.message.display {
         case .rise, .bubbleBottom:
             self.center = CGPoint(x: UIScreen.main.bounds.width/2, y: UIScreen.main.bounds.height)
