@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
 [![Platform](https://img.shields.io/cocoapods/p/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
 
+## **deprecated 2019/10**
+
 ## simple message display queue
 
 ### How to use
