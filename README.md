@@ -6,6 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/DZPopupMessageView.svg?style=flat)](http://cocoapods.org/pods/DZPopupMessageView)
 
 ## **deprecated 2019/10**
+> Please change to [DarkEggKit](https://github.com/darkzero/DarkEggKit)
 
 ## simple message display queue
 
